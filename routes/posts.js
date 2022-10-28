@@ -7,18 +7,18 @@ router.get('/', (req, res, next) => {
   res.send('INDEX /posts');
 });
 
-/* GET posts create /posts */
-router.get('/', (req, res, next) => {
-  res.send('CREATE /posts');
-});
-
 /* GET posts new /posts/new */
 router.post('/new', (req, res, next) => {
   res.send('NEW /posts/new');
 });
 
+/* GET posts create /posts */
+router.get('/', (req, res, next) => {
+  res.send('CREATE /posts');
+});
+
 /* GET posts show /posts/:id */
-router.get('/:ID', (req, res, next) => {
+router.get('/:id', (req, res, next) => {
   res.send('SHOW /posts/:id');
 });
 
@@ -38,11 +38,3 @@ router.delete('/:id', (req, res, next) => {
 });
 
 module.exports = router;
-
-// GET index        /posts
-// GET new          /posts/new
-// POST create      /posts
-// GET show         /posts/:id
-// GET edit         /posts/:id/edit
-// PUT update       /posts/:id
-// DELETE destroy   /posts/:id
