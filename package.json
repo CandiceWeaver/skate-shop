@@ -13,7 +13,6 @@
     "express": "~4.16.1",
     "express-session": "^1.17.3",
     "http-errors": "~1.6.3",
-    "mongoose": "^6.7.0",
     "morgan": "~1.9.1",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
@@ -21,6 +20,7 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
-    "locus": "^2.0.4"
+    "locus": "^2.0.4",
+    "mongoose": "^5.2.1"
   }
 }
